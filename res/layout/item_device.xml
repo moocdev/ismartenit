@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="horizontal"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:background="#FFFFFF"
+    >
+
+	<ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" 
+        android:src="@drawable/devices_outletlincd" 
+        android:adjustViewBounds="true"/>
+    <LinearLayout   
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/white"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        >
+        <com.smartenit.client.views.RobotoTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:textSize="23sp"
+        android:text="Outlet Linc"
+        />
+        <com.smartenit.client.views.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="18sp"
+        android:textColor="#cccccc"
+        android:gravity="left"
+        android:text="Total 0.3KWh"
+        />
+        <com.smartenit.client.views.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="14sp"
+        android:textColor="#cccccc"
+        android:gravity="left"
+        android:text="33 Watts"
+        />
+        <com.smartenit.client.views.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textSize="14sp"
+        android:textColor="#cccccc"
+        android:gravity="left"
+        android:text="22 Watts"
+        />
+    </LinearLayout>
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+
+	    <ToggleButton
+	        android:id="@+id/togglebutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textOff="Off"
+	        android:textOn="On" />
+
+	    <ToggleButton
+	        android:id="@+id/togglebutton2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textOff="Off"
+	        android:textOn="On"
+			android:layout_toRightOf="@id/togglebutton"
+			/>
+
+	</RelativeLayout>
+
+</LinearLayout> 
